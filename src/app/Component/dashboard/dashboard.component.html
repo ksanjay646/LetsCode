@@ -1,0 +1,14 @@
+<section fxLayout="row" fxLayout="row wrap" *ngIf='dashboardListObj'>
+    <div class="card-layout" *ngFor="let list of dashboardListObj;">
+        <div class="card-body">
+            <div class="img-body">
+                <img src={{list.links.mission_patch}} width="150" height="150" alt="">
+            </div>
+            <h3> {{list.mission_name}} #{{list.flight_number}}</h3>
+            <h4> {{uiLabelConstants.MISSION_IDS}}{{list.mission_id}}</h4>
+            <h4> {{uiLabelConstants.LAUNCH_YEAR}}: {{list.launch_year}} </h4>
+            <h4>{{uiLabelConstants.SUCCESS_LAUNCH}}: {{list.launch_success}} </h4>
+            <h4>{{uiLabelConstants.SUCCESS_LANDING}}: {{list.rocket.first_stage.cores[0].land_success}} </h4>
+        </div>
+    </div>
+</section>

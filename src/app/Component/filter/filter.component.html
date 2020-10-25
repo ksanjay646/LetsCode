@@ -1,0 +1,35 @@
+<section class="filter-layout">
+    <div class="res-filter">
+        <h4>Filters</h4>
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <h5>{{uiLabelConstants.LAUNCH_YEAR}}</h5>
+            <div class="line"></div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center">
+                <div class="btn" (click)="getFilterYear(year)" *ngFor="let year of Years">
+                    <span>{{year}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <h5>{{uiLabelConstants.SUCCESS_LAUNCH}}</h5>
+            <div class="line"></div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center">
+                <div class="btn" (click)="getFilterSuccessfulLaunch(option)" *ngFor="let option of Options">
+                    <span>{{option}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center center">
+            <h5>
+                {{uiLabelConstants.SUCCESS_LANDING}}</h5>
+            <div class="line"></div>
+            <div fxLayout="row wrap" fxLayoutAlign="center center">
+                <div class="btn" (click)="getFilterSuccessfulLanding(option)" *ngFor="let option of Options">
+                    <span>{{option}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
