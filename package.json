@@ -15,7 +15,7 @@
     "build:ssr": "ng build --prod && ng run spaceX:server:production",
     "prerender": "ng run spaceX:prerender"
   },
-  "engine": {
+  "engines": {
     "node": "12.18.1",
     "npm": "6.14.5"
   },
