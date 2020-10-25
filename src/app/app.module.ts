@@ -9,7 +9,7 @@ import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {FlexLayoutServerModule} from '@angular/flex-layout/server';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutServerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
