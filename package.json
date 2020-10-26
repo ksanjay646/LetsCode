@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "postinstall": "ngcc",
-    "start": "npm run server:ssr",
+    "start": "npm run serve:ssr",
     "build": "npm run build:ssr",
     "test": "ng test --code-coverage ",
     "lint": "ng lint",
