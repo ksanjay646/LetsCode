@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Component/header/header.component';
 import { FilterComponent } from './Component/filter/filter.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {FlexLayoutServerModule} from '@angular/flex-layout/server';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import {FlexLayoutServerModule} from '@angular/flex-layout/server';
     HeaderComponent,
     FilterComponent,
     DashboardComponent,
-
   ],
   imports: [
     HttpClientModule,
@@ -25,9 +23,8 @@ import {FlexLayoutServerModule} from '@angular/flex-layout/server';
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    FlexLayoutServerModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
