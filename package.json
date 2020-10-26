@@ -12,7 +12,8 @@
     "dev:ssr": "ng run spaceX:serve-ssr",
     "serve:ssr": "node dist/spaceX/server/main.js",
     "build:ssr": "ng build --prod && ng run spaceX:server:production",
-    "prerender": "ng run spaceX:prerender"
+    "prerender": "ng run spaceX:prerender",
+    "heroku-postbuild": "ng build --prod"
   },
   "engines": {
     "node": "12.18.1",
